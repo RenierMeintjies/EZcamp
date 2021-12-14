@@ -1,0 +1,114 @@
+body {
+	background: black;
+}
+
+#landing-btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	background-color: #249eef;
+	font-size: 16px;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 80px;
+	margin: 20px auto;
+	border-radius: 20px;
+	box-shadow: 0 6px #2086ca;
+}
+
+#landing-btn:hover {
+	box-shadow: 0 4px #2086ca;
+	top: 2px;
+}
+
+#landing-btn:active {
+	box-shadow: none;
+	top: 6px;
+}
+
+#landing-header {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	padding-top: 40vh;
+}
+
+#landing-header h1 {
+	color: rgb(0, 195, 255);
+}
+
+.slideshow {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slideshow li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a016-jeremyb-49.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=48bfa71365dadd453ea7e36db957f9b9);
+}
+
+.slideshow li:nth-child(2) {
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a002-iswantoa-1.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=4db9df118a0d42a8eb6a1f23e5e2b179);
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(3) {
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/273-mckinsey-176.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=2313cfa30c83d2fc0342ded7883513ba);
+	animation-delay: 20s;
+}
+
+.slideshow li:nth-child(4) {
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-93-pom-499f.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=6c89d809b2996d33312bd9b9d500a16d);
+	animation-delay: 30s;
+}
+
+.slideshow li:nth-child(5) {
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/263-ake-61544566.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=fdc99e74e6770b4e653e3b3719bf2b65);
+	animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	10% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+*/ .no-cssanimations .slideshow li {
+	opacity: 1;
+}
