@@ -33,10 +33,6 @@ Navigate to your browser and type:
 ```console
 http://localhost:3000/
 ```
-
-# Developers
-
-Follow the above instructions to get your dev environment set up. Feel free to contribute to this project as you see fit PRs might make it in or not depending on my schedule
 ---
 #### Credit to [Colt](https://github.com/Colt) creater of YelpCamp
 
