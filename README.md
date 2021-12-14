@@ -34,5 +34,5 @@ Navigate to your browser and type:
 http://localhost:3000/
 ```
 ---
-#### Credit to [Colt](https://github.com/Colt) creater of YelpCamp
+#### Credit to [Colt](https://github.com/Colt) creator of YelpCamp
 
